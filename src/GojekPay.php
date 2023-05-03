@@ -28,10 +28,10 @@ class GojekPay
 
     private $authToken, $uniqueId, $sessionId, $pin, $idKey;
 
-    public function __construct($authToken = false)
+    public function __construct($sessionId, $uniqueId, $authToken = false)
     {
-        $this->sessionId = self::uuidv4(); // generated from self::uuidv4();
-        $this->uniqueId  = self::uuidv4(); // generated from self::uuidv4();
+        $this->sessionId = $sessionId; // generated from uuidv4();
+        $this->uniqueId = $uniqueId; // generated from uuidv4();
 
         if ($authToken) {
             $this->authToken = $authToken;
