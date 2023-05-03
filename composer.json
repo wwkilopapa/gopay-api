@@ -1,11 +1,11 @@
 {
-    "name": "wwkilopapa/gopay-api",
+    "name": "namdevel/gopay-api",
     "description": "Un-official Gojek Gopay API Wrapper",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "wwkilopapa\\": "src/"
+            "Namdevel\\": "src/"
         }
     },
     "authors": [
@@ -14,8 +14,5 @@
             "email": "namdevel@gmail.com"
         }
     ],
-    "require": {
-      "ext-curl": "*",
-      "ext-json": "*"
-    }
+    "require": {}
 }
