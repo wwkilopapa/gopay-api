@@ -13,7 +13,7 @@ Compliant with the March 08, 2022 Gojek API update.
 Installation
 ------------
 ```
-composer require wwkilopapa/gopay-api
+composer require namdevel/gopay-api
 ```
 Features
 ------------
