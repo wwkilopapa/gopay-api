@@ -24,14 +24,14 @@ class GojekPay
     const appVersion = '4.55.0';
     const gojekCountryCode = 'ID';
     const gojekUserLocale = 'id_ID';
-    const userAgent = 'Gojek/4.55.0 (com.go-jek.ios; build:50783517; iOS 15.6.1) NetworkSDK/1.3.2';
+    const userAgent = 'Gojek/4.38.1 (com.go-jek.ios; build:24785490; iOS 14.4.0) Alamofire/4.38.1';
 
     private $authToken, $uniqueId, $sessionId, $pin, $idKey;
 
     public function __construct($authToken = false)
     {
-        $this->sessionId = '786C2BF4-A6A1-498D-8906-1B8064D58156'; // generated from self::uuidv4();
-        $this->uniqueId  = '0D8C6014-F646-43A8-ADFB-F9A2416C1B28'; // generated from self::uuidv4();
+        $this->sessionId = self::uuidv4(); // generated from self::uuidv4();
+        $this->uniqueId  = self::uuidv4(); // generated from self::uuidv4();
 
         if ($authToken) {
             $this->authToken = $authToken;
